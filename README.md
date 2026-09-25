@@ -1,5 +1,7 @@
 # Human-Rights and Social-Value-Chain Diligence Agent
 
+[![Validate research workflow](https://github.com/HHFinAi/Human-Rights-and-Social-Value-Chain-Diligence/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/HHFinAi/Human-Rights-and-Social-Value-Chain-Diligence/actions/workflows/validate.yml)
+
 **Institutional-quality buy-side research, designed to support tradable investment decisions through a traceable, auditable workflow.**
 
 Who may be harmed across the value chain, how severe is the risk, and what prevention, remedy and investment responses are evidenced?
