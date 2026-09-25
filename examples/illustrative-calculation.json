@@ -1,0 +1,44 @@
+{
+  "id": "C1",
+  "operation": "wage_gap_cost",
+  "arguments": {
+    "workers": 1000,
+    "current_period_wage": 300,
+    "living_period_wage": 400,
+    "periods_per_year": 12,
+    "employer_load": 0.1
+  },
+  "currency": "USD",
+  "measurement_unit": "specified_outcome",
+  "input_unit": "percent",
+  "result_unit": "decimal",
+  "input_provenance": {
+    "workers": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "persons"
+    },
+    "current_period_wage": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "living_period_wage": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "periods_per_year": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "periods_per_year"
+    },
+    "employer_load": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "decimal"
+    }
+  },
+  "result": {
+    "period_gap_per_worker": 100.0,
+    "direct_annual_cost": 1200000.0,
+    "loaded_annual_cost": 1320000.0,
+    "not_a_complete_living_wage_or_remedy_assessment": true
+  },
+  "output_unit": "wage_gap_scenario"
+}

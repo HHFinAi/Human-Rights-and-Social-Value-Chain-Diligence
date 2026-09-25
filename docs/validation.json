@@ -1,0 +1,40 @@
+{
+  "agent": "human-rights-value-chain-agent",
+  "version": "0.2.0",
+  "validated_on": "2026-09-25",
+  "python": "3.13.5",
+  "platform": "Linux",
+  "unit_test_executions": 119,
+  "domain_unit_tests": 12,
+  "unit_tests": "PASS",
+  "schema_validations": 39,
+  "schema_validation": "PASS",
+  "routes": [
+    {
+      "route": "issuer-diligence",
+      "status": "SYNTHETIC_COMPLETE_NOT_APPROVED",
+      "stage_count": 10,
+      "packet_digest": "b025a48ff4e817dadb6546dab5cbe6eb2aa3b9a180f582c7dc953290e3737d04",
+      "execution_authorized": false
+    },
+    {
+      "route": "supply-chain-review",
+      "status": "SYNTHETIC_COMPLETE_NOT_APPROVED",
+      "stage_count": 10,
+      "packet_digest": "d7e61748f5424c36665c1524cd7be2fd06d3e3c4b5b6752bfccd80fc185229ec",
+      "execution_authorized": false
+    },
+    {
+      "route": "remediation-review",
+      "status": "SYNTHETIC_COMPLETE_NOT_APPROVED",
+      "stage_count": 10,
+      "packet_digest": "2a5f5237e0caa6f6a5d95db63f09c7507335234cd276333eac5b093452960334",
+      "execution_authorized": false
+    }
+  ],
+  "source_study_status": "NEEDS_DATA",
+  "live_research_performed": false,
+  "remote_github_actions_run": false,
+  "production_certification": false,
+  "repository_checks": "PASS"
+}

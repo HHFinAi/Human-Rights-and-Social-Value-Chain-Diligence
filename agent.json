@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0",
+  "name": "human-rights-value-chain-agent",
+  "title": "Human-Rights and Social-Value-Chain Diligence Agent",
+  "owner": "HHFinAi",
+  "version": "0.2.0",
+  "default_route": "issuer-diligence",
+  "routes": {
+    "issuer-diligence": {
+      "title": "Issuer Diligence",
+      "nodes": [
+        {
+          "id": "mandate",
+          "depends_on": []
+        },
+        {
+          "id": "evidence",
+          "depends_on": [
+            "mandate"
+          ]
+        },
+        {
+          "id": "stakeholders",
+          "depends_on": [
+            "evidence"
+          ]
+        },
+        {
+          "id": "salience",
+          "depends_on": [
+            "stakeholders"
+          ]
+        },
+        {
+          "id": "remedy",
+          "depends_on": [
+            "salience"
+          ]
+        },
+        {
+          "id": "valuation",
+          "depends_on": [
+            "remedy"
+          ]
+        },
+        {
+          "id": "market",
+          "depends_on": [
+            "valuation"
+          ]
+        },
+        {
+          "id": "expression",
+          "depends_on": [
+            "market"
+          ]
+        },
+        {
+          "id": "challenge",
+          "depends_on": [
+            "expression"
+          ]
+        },
+        {
+          "id": "memo",
+          "depends_on": [
+            "challenge"
+          ]
+        }
+      ],
+      "asset_types": [
+        "equity",
+        "bond"
+      ],
+      "primary_evidence_kinds": [
+        "issuer",
+        "instrument",
+        "official",
+        "contract",
+        "ecological"
+      ]
+    },
+    "supply-chain-review": {
+      "title": "Supply Chain Review",
+      "nodes": [
+        {
+          "id": "mandate",
+          "depends_on": []
+        },
+        {
+          "id": "evidence",
+          "depends_on": [
+            "mandate"
+          ]
+        },
+        {
+          "id": "stakeholders",
+          "depends_on": [
+            "evidence"
+          ]
+        },
+        {
+          "id": "salience",
+          "depends_on": [
+            "stakeholders"
+          ]
+        },
+        {
+          "id": "remedy",
+          "depends_on": [
+            "salience"
+          ]
+        },
+        {
+          "id": "valuation",
+          "depends_on": [
+            "remedy"
+          ]
+        },
+        {
+          "id": "market",
+          "depends_on": [
+            "valuation"
+          ]
+        },
+        {
+          "id": "expression",
+          "depends_on": [
+            "market"
+          ]
+        },
+        {
+          "id": "challenge",
+          "depends_on": [
+            "expression"
+          ]
+        },
+        {
+          "id": "memo",
+          "depends_on": [
+            "challenge"
+          ]
+        }
+      ],
+      "asset_types": [
+        "equity",
+        "bond"
+      ],
+      "primary_evidence_kinds": [
+        "issuer",
+        "instrument",
+        "official",
+        "contract",
+        "ecological"
+      ]
+    },
+    "remediation-review": {
+      "title": "Remediation Review",
+      "nodes": [
+        {
+          "id": "mandate",
+          "depends_on": []
+        },
+        {
+          "id": "evidence",
+          "depends_on": [
+            "mandate"
+          ]
+        },
+        {
+          "id": "stakeholders",
+          "depends_on": [
+            "evidence"
+          ]
+        },
+        {
+          "id": "salience",
+          "depends_on": [
+            "stakeholders"
+          ]
+        },
+        {
+          "id": "remedy",
+          "depends_on": [
+            "salience"
+          ]
+        },
+        {
+          "id": "valuation",
+          "depends_on": [
+            "remedy"
+          ]
+        },
+        {
+          "id": "market",
+          "depends_on": [
+            "valuation"
+          ]
+        },
+        {
+          "id": "expression",
+          "depends_on": [
+            "market"
+          ]
+        },
+        {
+          "id": "challenge",
+          "depends_on": [
+            "expression"
+          ]
+        },
+        {
+          "id": "memo",
+          "depends_on": [
+            "challenge"
+          ]
+        }
+      ],
+      "asset_types": [
+        "equity",
+        "bond"
+      ],
+      "primary_evidence_kinds": [
+        "issuer",
+        "instrument",
+        "official",
+        "contract",
+        "ecological"
+      ]
+    }
+  },
+  "stages": {
+    "mandate": {
+      "id": "mandate",
+      "title": "Mandate and investable decision",
+      "required_sections": [
+        "decision_question",
+        "instrument_boundary",
+        "mandate_constraints"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/mandate.md",
+      "investment_gate": false
+    },
+    "evidence": {
+      "id": "evidence",
+      "title": "Evidence intake and reconciliation",
+      "required_sections": [
+        "source_register_review",
+        "boundary_reconciliation",
+        "material_gaps"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/evidence.md",
+      "investment_gate": false
+    },
+    "stakeholders": {
+      "id": "stakeholders",
+      "title": "People and value-chain mapping",
+      "required_sections": [
+        "affected_groups",
+        "tiers_and_business_relationships",
+        "worker_voice",
+        "data_protection"
+      ],
+      "standard_ids": [
+        "UNGP",
+        "OECD-RBC"
+      ],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/stakeholders.md",
+      "investment_gate": false
+    },
+    "salience": {
+      "id": "salience",
+      "title": "Salience, severity and evidence",
+      "required_sections": [
+        "scale_scope_irremediability",
+        "actual_vs_potential",
+        "relationship_to_harm",
+        "allegations_and_responses"
+      ],
+      "standard_ids": [
+        "UNGP"
+      ],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/salience.md",
+      "investment_gate": false
+    },
+    "remedy": {
+      "id": "remedy",
+      "title": "Prevention, leverage and remedy",
+      "required_sections": [
+        "prevention_actions",
+        "access_to_remedy",
+        "verified_outcomes",
+        "disengagement_harm"
+      ],
+      "standard_ids": [
+        "UNGP",
+        "OECD-RBC"
+      ],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/remedy.md",
+      "investment_gate": false
+    },
+    "valuation": {
+      "id": "valuation",
+      "title": "Operational economics and financial transmission",
+      "required_sections": [
+        "wage_gap_scenario",
+        "supply_disruption",
+        "litigation_and_contracts",
+        "separate_people_risk"
+      ],
+      "standard_ids": [
+        "IFRS-S1",
+        "UNGP"
+      ],
+      "requires_calculation": true,
+      "prompt_path": "prompts/stages/valuation.md",
+      "investment_gate": false,
+      "allowed_operations": [
+        "wage_gap_cost",
+        "remedy_coverage",
+        "supply_chain_coverage",
+        "harm_triage"
+      ]
+    },
+    "market": {
+      "id": "market",
+      "title": "Market context and implementation evidence",
+      "required_sections": [
+        "market_or_contract_evidence",
+        "liquidity_funding_access",
+        "portfolio_context"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/market.md",
+      "investment_gate": false
+    },
+    "expression": {
+      "id": "expression",
+      "title": "Investment-decision handoff",
+      "required_sections": [
+        "valuation_and_entry",
+        "risk_catalysts_and_thesis_breakers",
+        "eligibility_review"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/expression.md",
+      "investment_gate": true
+    },
+    "challenge": {
+      "id": "challenge",
+      "title": "Independent challenge and exceptions",
+      "required_sections": [
+        "source_challenge",
+        "model_and_method_limits",
+        "material_issues"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/challenge.md",
+      "investment_gate": false
+    },
+    "memo": {
+      "id": "memo",
+      "title": "Investment committee and accountable review",
+      "required_sections": [
+        "investment_question_and_answer",
+        "financial_vs_sustainability_conclusions",
+        "evidence_and_calculations",
+        "decision_conditions_and_limits"
+      ],
+      "standard_ids": [],
+      "requires_calculation": false,
+      "prompt_path": "prompts/stages/memo.md",
+      "investment_gate": false,
+      "required_assessments": {
+        "people_risk_separate": [
+          true
+        ],
+        "allegations_treated_as_facts": [
+          false
+        ],
+        "remedy_basis": [
+          "independent_outcome_evidence",
+          "company_claim_only",
+          "not_established"
+        ],
+        "personal_data_public": [
+          false
+        ]
+      }
+    }
+  },
+  "demo_operation": "wage_gap_cost",
+  "demo_arguments": {
+    "workers": 1000,
+    "current_period_wage": 300,
+    "living_period_wage": 400,
+    "periods_per_year": 12,
+    "employer_load": 0.1
+  },
+  "demo_assessment": "Fictional supply chain: a low-spend supplier can present severe risks; an audit or a closed complaint is not automatically evidence of remedy.",
+  "demo_domain_assessment": {
+    "people_risk_separate": true,
+    "allegations_treated_as_facts": false,
+    "remedy_basis": "not_established",
+    "personal_data_public": false
+  },
+  "capabilities": {
+    "embedded_llm": false,
+    "live_data": false,
+    "trade_execution": false,
+    "scheduler": false,
+    "external_communications": false,
+    "authenticated_human_identity": false
+  }
+}

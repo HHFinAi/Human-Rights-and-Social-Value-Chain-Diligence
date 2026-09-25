@@ -1,0 +1,20 @@
+{
+  "owner": "HHFinAi",
+  "repository_name": "human-rights-value-chain-agent",
+  "description": "Human rights and value chains: institutional-quality buy-side research with traceable, auditable workflows and investment-decision handoffs. Research support, not certification or trading.",
+  "topics": [
+    "sustainable-finance",
+    "buy-side",
+    "investment-research",
+    "ai-agent",
+    "agent-skills",
+    "auditable-workflow",
+    "human-in-the-loop",
+    "rights-analysis",
+    "human-rights",
+    "responsible-investment"
+  ],
+  "publication_status": "prepared-not-published",
+  "intended_repository_url": "https://github.com/HHFinAi/human-rights-value-chain-agent",
+  "homepage": null
+}

@@ -1,0 +1,7 @@
+{
+  "workers": 1000,
+  "current_period_wage": 300,
+  "living_period_wage": 400,
+  "periods_per_year": 12,
+  "employer_load": 0.1
+}

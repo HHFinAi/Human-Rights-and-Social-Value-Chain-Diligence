@@ -1,0 +1,94 @@
+{
+  "agent": "human-rights-value-chain-agent",
+  "version": "0.2.0",
+  "operations": [
+    {
+      "operation": "dscr",
+      "signature": "(cash_available: 'float', debt_service: 'float') -> 'float'",
+      "argument_units": {
+        "cash_available": "$money",
+        "debt_service": "$money"
+      },
+      "output_unit": "multiple",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "harm_triage",
+      "signature": "(scale: 'str', scope: 'str', irremediability: 'str', likelihood: 'str') -> 'dict'",
+      "argument_units": {
+        "scale": "severity_label",
+        "scope": "severity_label",
+        "irremediability": "severity_label",
+        "likelihood": "likelihood_label"
+      },
+      "output_unit": "human_rights_triage",
+      "description": "Original conservative escalation convention, NOT a UN/OECD scoring formula."
+    },
+    {
+      "operation": "holding_period_return",
+      "signature": "(initial_dirty_price: 'float', exit_dirty_price: 'float', cash_income: 'float', funding_cost: 'float', transaction_cost: 'float') -> 'float'",
+      "argument_units": {
+        "initial_dirty_price": "$money",
+        "exit_dirty_price": "$money",
+        "cash_income": "$money",
+        "funding_cost": "$money",
+        "transaction_cost": "$money"
+      },
+      "output_unit": "decimal_return",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "npv",
+      "signature": "(cashflows: 'list[float]', annual_discount: 'float') -> 'float'",
+      "argument_units": {
+        "cashflows": "$money",
+        "annual_discount": "decimal"
+      },
+      "output_unit": "$money",
+      "description": "Periodic NPV; cashflows[0] is at time zero, then annual periods."
+    },
+    {
+      "operation": "remedy_coverage",
+      "signature": "(verified_remedied: 'int', total_identified: 'int') -> 'dict'",
+      "argument_units": {
+        "verified_remedied": "cases",
+        "total_identified": "cases"
+      },
+      "output_unit": "remedy_coverage",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "scale",
+      "signature": "(value: 'float', factor: 'float') -> 'float'",
+      "argument_units": {
+        "value": "$input_unit",
+        "factor": "conversion_factor"
+      },
+      "output_unit": "$output_unit",
+      "description": "Explicit arithmetic conversion; external unit semantics need human review."
+    },
+    {
+      "operation": "supply_chain_coverage",
+      "signature": "(mapped_exposure: 'float', total_exposure: 'float') -> 'dict'",
+      "argument_units": {
+        "mapped_exposure": "$money",
+        "total_exposure": "$money"
+      },
+      "output_unit": "supply_chain_coverage",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "wage_gap_cost",
+      "signature": "(workers: 'int', current_period_wage: 'float', living_period_wage: 'float', periods_per_year: 'int', employer_load: 'float') -> 'dict'",
+      "argument_units": {
+        "workers": "persons",
+        "current_period_wage": "$money",
+        "living_period_wage": "$money",
+        "periods_per_year": "periods_per_year",
+        "employer_load": "decimal"
+      },
+      "output_unit": "wage_gap_scenario",
+      "description": "See source code and domain methodology for assumptions."
+    }
+  ]
+}
