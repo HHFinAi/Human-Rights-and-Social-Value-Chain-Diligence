@@ -6,15 +6,15 @@
     ".gitattributes": "ced447a891638bf2cc804146c15fd5b0d6f511be94c9d2369e4be0e6d8abf09e",
     ".github/workflows/validate.yml": "ab09bb4d53b631e593ca40738a91f4bd0062c0d2faeedd228a9681e9da523334",
     ".gitignore": "268f9abf12c0284f93f06031a3a0a45b846dd16c24c7745e4a6558c65da2be30",
-    "AGENTS.md": "8d29a6383aa50b8716f5a13aa0a2465ac97c538f8221d79c16154348b4d594be",
-    "CHANGELOG.md": "af885c52c37910a61753e0b9902e983c6cfab5ef00e2ef4c3f3c5e1725c9ce99",
+    "AGENTS.md": "a1dfe6c6a2dcfba6f95ff0a96b8461507936d95d568796b4f0b0e696a271944c",
+    "CHANGELOG.md": "97e56db4293498ac7036ccb31d653d91f43a9b661350c068a697160c6bb7c6c7",
     "CITATION.cff": "1961bceb205c1f1249a9f75f139fc05d515167209788cfc7c2f5b63537ea04be",
     "COMMON_CORE_MANIFEST.json": "3fadb1efbc423eb519e409be5bdf1fb33dc0a9b25a35a446be1512ba2e6ee364",
-    "CONTRIBUTING.md": "43183fc73dbec1ed3539c9b20a916b18ed5d16b1a849c3c8dd0422f0f14d3ac8",
+    "CONTRIBUTING.md": "b5ba238e30fcb247643fcfde4d7b2c85decea65dc06e2f6526c0a896335ae7ad",
     "LICENSE": "0096c6f4b18e36749e9652b24d63dbe9d2f36ef66e2ea80e61660c7d3f10b7fd",
     "NOTICE.md": "de20315d76e21da66212781043f66d9ec282041cb8752bb22c169f5029559fb1",
     "PROMPTS.md": "0f5bf8061866238305f306aabed73250002ebc6ac0dc30f2930e9800ce681297",
-    "README.md": "7c35ccaed48921fb1a45f21322fc57f3cc7d524c7e36a55e3fdc54468415a9ab",
+    "README.md": "dc6f4bee87d99fa1f088b3598b6e0989349821692dec9cc2bcc4c3a1598b0c25",
     "SECURITY.md": "0a73124a23b3c34faf2dc0350c5b9873fdebcaf15ccc0eaf43a99e8ecc5b61a2",
     "SKILL.md": "9aa1142d3db9a072f35137de45555e70e7892a25b86a0ef38feaa05819f4ce6d",
     "START_HERE.md": "7e6d25ce3e8ffc2dae0d89f1c78da5f47f10c7225d1f2c945779de04523abfcd",
@@ -86,6 +86,11 @@
     "tests/test_cli.py": "3a7660a32809f0be09b5034dcaa08b4e7d674306465d83864af23fb47d91e24d",
     "tests/test_controls.py": "99a613c6d888aed39a023629c31cd59aea9a06db0426aa3ed337e9b7828b0af2",
     "tests/test_expansion_controls.py": "3580af288c33dc8ce82fae11a5a8b50d88684ede70d2eb8eda3134cf4f27e600",
-    "tests/test_metadata.py": "08512563116643e106c3e9e9e58e263a4d99ebdc188ef360384fe858928ea85b"
+    "tests/test_metadata.py": "08512563116643e106c3e9e9e58e263a4d99ebdc188ef360384fe858928ea85b",
+    "RESPONSIBLE_AI.md": "79166a83a74e02a716d6b03f4d0851d74166f314e9ee90f15119ed6c2dc76292"
+  },
+  "responsible_ai_documentation_update": {
+    "date": "2026-10-22",
+    "scope": "Only the policy and documentation paths in this commit were updated; no runtime validation or human research approval is inferred."
   }
 }
